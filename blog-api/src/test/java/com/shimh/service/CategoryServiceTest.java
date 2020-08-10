@@ -2,19 +2,17 @@ package com.shimh.service;
 
 import java.util.List;
 
+import com.nekotori.service.CategoryService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.shimh.BlogApiApplicationTests;
-import com.shimh.entity.Article;
-import com.shimh.entity.Category;
-import com.shimh.entity.Tag;
-import com.shimh.vo.CategoryVO;
+import com.nekotori.vo.CategoryVO;
 
 public class CategoryServiceTest extends BlogApiApplicationTests{
 
 	@Autowired
-	private CategoryService	categoryService;
+	private CategoryService categoryService;
 	
 	
 	

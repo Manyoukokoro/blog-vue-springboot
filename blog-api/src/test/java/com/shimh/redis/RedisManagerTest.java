@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.shimh.BlogApiApplicationTests;
-import com.shimh.common.cache.RedisManager;
+import com.nekotori.common.cache.RedisManager;
 
 public class RedisManagerTest extends BlogApiApplicationTests{
 

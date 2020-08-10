@@ -2,17 +2,17 @@ package com.shimh.service;
 
 import java.util.List;
 
+import com.nekotori.service.TagService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.shimh.BlogApiApplicationTests;
-import com.shimh.entity.Article;
-import com.shimh.entity.Tag;
+import com.nekotori.entity.Tag;
 
 public class TagServiceTest extends BlogApiApplicationTests{
 
 	@Autowired
-	private TagService	tagService;
+	private TagService tagService;
 	
 	
 	

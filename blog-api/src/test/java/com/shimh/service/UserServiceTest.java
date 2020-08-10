@@ -3,12 +3,13 @@ package com.shimh.service;
 import java.util.Date;
 import java.util.List;
 
+import com.nekotori.service.UserService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.shimh.BlogApiApplicationTests;
-import com.shimh.entity.User;
-import com.shimh.entity.UserStatus;
+import com.nekotori.entity.User;
+import com.nekotori.entity.UserStatus;
 
 public class UserServiceTest extends BlogApiApplicationTests{
 

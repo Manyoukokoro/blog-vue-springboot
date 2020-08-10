@@ -1,7 +1,6 @@
 package com.shimh.controller;
 
 import java.util.Date;
-import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -14,8 +13,8 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.alibaba.fastjson.JSONObject;
 import com.shimh.BlogApiApplicationTests;
-import com.shimh.entity.User;
-import com.shimh.entity.UserStatus;
+import com.nekotori.entity.User;
+import com.nekotori.entity.UserStatus;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;  
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;  

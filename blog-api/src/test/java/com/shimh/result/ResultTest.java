@@ -6,8 +6,8 @@ import java.util.List;
 import org.junit.Test;
 
 import com.alibaba.fastjson.JSON;
-import com.shimh.common.result.Result;
-import com.shimh.entity.User;
+import com.nekotori.common.result.Result;
+import com.nekotori.entity.User;
 
 public class ResultTest {
 	

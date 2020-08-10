@@ -4,8 +4,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.shimh.BlogApiApplicationTests;
-import com.shimh.entity.Category;
-import com.shimh.repository.CategoryRepository;
+import com.nekotori.repository.CategoryRepository;
 
 public class CategoryRepositoryTest extends BlogApiApplicationTests{
 
