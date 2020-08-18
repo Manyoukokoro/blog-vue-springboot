@@ -31,7 +31,9 @@ public abstract class BaseEntity<ID extends Serializable> implements Serializabl
 
     @Override
     public boolean equals(Object obj) {
-
+/*
+* 如果obj和this都为null？
+* */
         if (null == obj) {
             return false;
         }
@@ -40,7 +42,7 @@ public abstract class BaseEntity<ID extends Serializable> implements Serializabl
             return true;
         }
 
-        if (!getClass().equals(obj.getClass())) {
+        if (!this.getClass().equals(obj.getClass())) {
             return false;
         }
 

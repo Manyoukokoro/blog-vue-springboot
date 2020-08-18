@@ -3,8 +3,8 @@ package com.nekotori.service;
 import java.util.List;
 
 import com.nekotori.entity.Article;
-import com.nekotori.vo.ArticleVo;
-import com.nekotori.vo.PageVo;
+import com.nekotori.vo.ArticleVO;
+import com.nekotori.vo.PageVO;
 
 /**
  * @author shimh
@@ -13,9 +13,9 @@ import com.nekotori.vo.PageVo;
  */
 public interface ArticleService {
 
-    List<Article> listArticles(PageVo page);
+    List<Article> listArticles(PageVO page);
 
-    List<Article> listArticles(ArticleVo article, PageVo page);
+    List<Article> listArticles(ArticleVO article, PageVO page);
 
     List<Article> findAll();
 
@@ -39,6 +39,6 @@ public interface ArticleService {
 
     List<Article> listNewArticles(int limit);
 
-    List<ArticleVo> listArchives();
+    List<ArticleVO> listArchives();
 
 }

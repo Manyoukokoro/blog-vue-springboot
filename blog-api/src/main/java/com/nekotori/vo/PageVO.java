@@ -1,6 +1,6 @@
 package com.nekotori.vo;
 
-public class PageVo {
+public class PageVO {
 
     private Integer pageNumber;
 
@@ -44,7 +44,7 @@ public class PageVo {
 
     @Override
     public String toString() {
-        return "PageVo{" +
+        return "PageVO{" +
                 "pageNumber=" + pageNumber +
                 ", pageSize=" + pageSize +
                 ", name='" + name + '\'' +

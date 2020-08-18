@@ -3,8 +3,8 @@ package com.nekotori.controller;
 import java.util.List;
 
 import com.nekotori.common.annotation.LogAnnotation;
-import com.nekotori.vo.ArticleVo;
-import com.nekotori.vo.PageVo;
+import com.nekotori.vo.ArticleVO;
+import com.nekotori.vo.PageVO;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,7 +53,7 @@ public class ArticleController {
                     @FastJsonFilter(clazz = Tag.class, props = {"id", "avatar"})},
             include = {@FastJsonFilter(clazz = User.class, props = {"nickname"})})
     @LogAnnotation(module = "文章", operation = "获取所有文章")
-    public Result listArticles(ArticleVo article, PageVo page) {
+    public Result listArticles(ArticleVO article, PageVO page) {
         System.out.println(article);
         System.out.println(page);
         List<Article> articles = articleService.listArticles(article, page);

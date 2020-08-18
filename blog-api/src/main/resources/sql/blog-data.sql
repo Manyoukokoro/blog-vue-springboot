@@ -60,8 +60,8 @@ INSERT INTO `me_category` VALUES ('5', '/category/language.png', '编程语言',
 -- ----------------------------
 -- Records of me_comment
 -- ----------------------------
-INSERT INTO `me_comment` VALUES ('1', '你辛苦了', '2018-01-31 13:29:01', '1', '15');
-INSERT INTO `me_comment` VALUES ('2', '啦啦啦', '2018-01-31 16:12:31', '1', '1');
+INSERT INTO `me_comment` VALUES ('1', '你辛苦了', '2018-01-31 13:29:01', '1', '1', '15', null, null);
+INSERT INTO `me_comment` VALUES ('2', '啦啦啦', '2018-01-31 16:12:31', '1', '1', '1', null, null);
 
 
 

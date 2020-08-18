@@ -4,8 +4,8 @@ import java.util.Date;
 import java.util.List;
 
 import com.nekotori.repository.ArticleRepository;
-import com.nekotori.vo.ArticleVo;
-import com.nekotori.vo.PageVo;
+import com.nekotori.vo.ArticleVO;
+import com.nekotori.vo.PageVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,13 +30,13 @@ public class ArticleServiceImpl implements ArticleService {
 
 
     @Override
-    public List<Article> listArticles(PageVo page) {
+    public List<Article> listArticles(PageVO page) {
 
         return articleRepository.listArticles(page);
     }
 
     @Override
-    public List<Article> listArticles(ArticleVo article, PageVo page) {
+    public List<Article> listArticles(ArticleVO article, PageVO page) {
 
         return articleRepository.listArticles(article, page);
     }
@@ -136,7 +136,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public List<ArticleVo> listArchives() {
+    public List<ArticleVO> listArchives() {
 
         return articleRepository.listArchives();
     }

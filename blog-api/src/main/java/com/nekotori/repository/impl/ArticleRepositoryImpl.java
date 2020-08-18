@@ -2,8 +2,8 @@ package com.nekotori.repository.impl;
 
 import com.nekotori.repository.wrapper.ArticleWrapper;
 import com.nekotori.entity.Article;
-import com.nekotori.vo.ArticleVo;
-import com.nekotori.vo.PageVo;
+import com.nekotori.vo.ArticleVO;
+import com.nekotori.vo.PageVO;
 import org.hibernate.Query;
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
@@ -20,7 +20,7 @@ public class ArticleRepositoryImpl implements ArticleWrapper {
     private EntityManager em;
 
     @Override
-    public List<Article> listArticles(PageVo page) {
+    public List<Article> listArticles(PageVO page) {
 
         StringBuilder hql = new StringBuilder("from Article");
 
@@ -46,7 +46,7 @@ public class ArticleRepositoryImpl implements ArticleWrapper {
     }
 
     @Override
-    public List<Article> listArticles(ArticleVo article, PageVo page) {
+    public List<Article> listArticles(ArticleVO article, PageVO page) {
 
         StringBuilder hql = new StringBuilder("from Article a ");
 
@@ -179,7 +179,7 @@ public class ArticleRepositoryImpl implements ArticleWrapper {
     }
 
     @Override
-    public List<ArticleVo> listArchives() {
+    public List<ArticleVO> listArchives() {
 
         String sql = "select year(create_date) as year,month(create_date) as month,count(*) as count from me_article group by year(create_date),month(create_date)";
 
@@ -188,7 +188,7 @@ public class ArticleRepositoryImpl implements ArticleWrapper {
         query.addScalar("month");
         query.addScalar("count", IntegerType.INSTANCE);
 
-        query.setResultTransformer(Transformers.aliasToBean(ArticleVo.class));
+        query.setResultTransformer(Transformers.aliasToBean(ArticleVO.class));
         return query.list();
     }
 

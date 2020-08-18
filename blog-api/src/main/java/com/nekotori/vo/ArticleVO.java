@@ -2,7 +2,7 @@ package com.nekotori.vo;
 
 import com.nekotori.entity.Article;
 
-public class ArticleVo extends Article {
+public class ArticleVO extends Article {
 
     private Integer year;
 
@@ -56,7 +56,7 @@ public class ArticleVo extends Article {
 
     @Override
     public String toString() {
-        return "ArticleVo{" +
+        return "ArticleVO{" +
                 "year='" + year + '\'' +
                 ", month='" + month + '\'' +
                 ", tagId=" + tagId +

@@ -3,8 +3,8 @@ package com.shimh.service;
 import java.util.List;
 
 import com.nekotori.service.ArticleService;
-import com.nekotori.vo.ArticleVo;
-import com.nekotori.vo.PageVo;
+import com.nekotori.vo.ArticleVO;
+import com.nekotori.vo.PageVO;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -57,7 +57,7 @@ public class ArticleServiceTest extends BlogApiApplicationTests{
 	@Test
 	public void listArticlesTest() {
 
-		PageVo p = new PageVo();
+		PageVO p = new PageVO();
 		p.setPageNumber(1);
 		p.setPageSize(5);
 		p.setName("createDate");
@@ -72,13 +72,13 @@ public class ArticleServiceTest extends BlogApiApplicationTests{
 	@Test
 	public void listArticlesTest2() {
 
-		PageVo p = new PageVo();
+		PageVO p = new PageVO();
 		p.setPageNumber(1);
 		p.setPageSize(5);
 		p.setName("a.createDate");
 		p.setSort("desc");
 
-		ArticleVo articleVo = new ArticleVo();
+		ArticleVO articleVo = new ArticleVO();
 		articleVo.setYear(2018);
 		articleVo.setMonth(2);
 		//articleVo.setTagId(2);
