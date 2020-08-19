@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * 基础Entity
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

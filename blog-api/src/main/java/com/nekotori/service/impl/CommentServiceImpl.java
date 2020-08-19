@@ -16,7 +16,7 @@ import com.nekotori.entity.Comment;
 import com.nekotori.service.CommentService;
 
 /**
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月25日
  */

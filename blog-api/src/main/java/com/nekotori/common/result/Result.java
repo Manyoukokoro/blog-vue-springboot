@@ -9,7 +9,7 @@ import com.nekotori.common.constant.ResultCode;
 /**
  * api接口数据返回封装
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

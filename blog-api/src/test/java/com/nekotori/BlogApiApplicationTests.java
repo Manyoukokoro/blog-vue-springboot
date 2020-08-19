@@ -1,4 +1,4 @@
-package com.shimh;
+package com.nekotori;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

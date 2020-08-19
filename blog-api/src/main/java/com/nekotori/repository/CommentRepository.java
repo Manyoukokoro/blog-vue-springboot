@@ -8,7 +8,7 @@ import com.nekotori.entity.Article;
 import com.nekotori.entity.Comment;
 
 /**
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月25日
  */

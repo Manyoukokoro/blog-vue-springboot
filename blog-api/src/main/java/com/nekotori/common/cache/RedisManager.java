@@ -8,7 +8,7 @@ import org.springframework.data.redis.core.ValueOperations;
 /**
  * RedisManager
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

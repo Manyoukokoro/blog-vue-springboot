@@ -1,4 +1,4 @@
-package com.shimh.json;
+package com.nekotori.json;
 
 import org.apache.shiro.session.mgt.SimpleSession;
 import org.junit.Test;

@@ -23,7 +23,7 @@ import com.nekotori.vo.CategoryVO;
 /**
  * 文章分类api
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月25日
  */

@@ -5,7 +5,7 @@ import java.lang.annotation.*;
 /**
  * 日志注解
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年4月18日
  */

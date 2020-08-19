@@ -3,7 +3,7 @@ package com.nekotori.entity;
 /**
  * 用户状态
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

@@ -1,4 +1,4 @@
-package com.shimh.result;
+package com.nekotori.result;
 
 import java.util.Arrays;
 import java.util.List;

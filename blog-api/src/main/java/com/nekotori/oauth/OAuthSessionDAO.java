@@ -13,7 +13,7 @@ import org.springframework.beans.factory.InitializingBean;
 /**
  * 将session保存到redis
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

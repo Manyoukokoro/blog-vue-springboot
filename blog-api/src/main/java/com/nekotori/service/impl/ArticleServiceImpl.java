@@ -18,7 +18,7 @@ import com.nekotori.entity.User;
 import com.nekotori.service.ArticleService;
 
 /**
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月25日
  */

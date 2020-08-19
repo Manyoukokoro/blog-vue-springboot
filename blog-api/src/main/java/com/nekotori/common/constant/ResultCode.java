@@ -3,7 +3,7 @@ package com.nekotori.common.constant;
 /**
  * api接口返回 code和message
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

@@ -1,14 +1,13 @@
-package com.shimh.service;
+package com.nekotori.service;
 
 import java.util.List;
 
-import com.nekotori.service.ArticleService;
 import com.nekotori.vo.ArticleVO;
 import com.nekotori.vo.PageVO;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.shimh.BlogApiApplicationTests;
+import com.nekotori.BlogApiApplicationTests;
 import com.nekotori.entity.Article;
 
 public class ArticleServiceTest extends BlogApiApplicationTests{

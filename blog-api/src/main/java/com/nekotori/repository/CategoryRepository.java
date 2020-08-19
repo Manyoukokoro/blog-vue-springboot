@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.nekotori.entity.Category;
 
 /**
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月25日
  */

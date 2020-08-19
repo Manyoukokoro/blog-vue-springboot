@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.nekotori.entity.User;
 
 /**
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

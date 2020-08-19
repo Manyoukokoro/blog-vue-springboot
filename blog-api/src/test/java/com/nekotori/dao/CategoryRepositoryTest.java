@@ -1,9 +1,9 @@
-package com.shimh.dao;
+package com.nekotori.dao;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.shimh.BlogApiApplicationTests;
+import com.nekotori.BlogApiApplicationTests;
 import com.nekotori.repository.CategoryRepository;
 
 public class CategoryRepositoryTest extends BlogApiApplicationTests{

@@ -6,7 +6,7 @@ import com.nekotori.entity.Category;
 import com.nekotori.vo.CategoryVO;
 
 /**
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月25日
  */

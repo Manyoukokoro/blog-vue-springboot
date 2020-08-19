@@ -1,6 +1,6 @@
-package com.shimh.dao;
+package com.nekotori.dao;
 
-import com.shimh.BlogApiApplicationTests;
+import com.nekotori.BlogApiApplicationTests;
 import com.nekotori.entity.Comment;
 import com.nekotori.repository.CommentRepository;
 import org.junit.Test;

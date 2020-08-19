@@ -5,7 +5,7 @@ import com.nekotori.entity.User;
 import org.apache.shiro.SecurityUtils;
 
 /**
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月25日
  */

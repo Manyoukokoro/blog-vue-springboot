@@ -1,12 +1,11 @@
-package com.shimh.service;
+package com.nekotori.service;
 
 import java.util.List;
 
-import com.nekotori.service.CategoryService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.shimh.BlogApiApplicationTests;
+import com.nekotori.BlogApiApplicationTests;
 import com.nekotori.vo.CategoryVO;
 
 public class CategoryServiceTest extends BlogApiApplicationTests{

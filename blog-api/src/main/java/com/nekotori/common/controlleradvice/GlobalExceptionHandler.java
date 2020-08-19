@@ -24,7 +24,7 @@ import com.nekotori.common.result.Result;
 /**
  * 全局异常处理器
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

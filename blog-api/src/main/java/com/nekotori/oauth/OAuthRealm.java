@@ -23,7 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * 自定义shiroRealm
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

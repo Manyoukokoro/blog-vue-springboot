@@ -3,7 +3,7 @@ package com.nekotori.common.result;
 /**
  * Controller参数校验 错误返回封装
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

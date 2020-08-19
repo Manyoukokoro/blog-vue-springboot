@@ -12,7 +12,7 @@ import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 /**
  * 从请求头获取token
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

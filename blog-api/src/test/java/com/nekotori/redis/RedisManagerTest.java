@@ -1,9 +1,9 @@
-package com.shimh.redis;
+package com.nekotori.redis;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.shimh.BlogApiApplicationTests;
+import com.nekotori.BlogApiApplicationTests;
 import com.nekotori.common.cache.RedisManager;
 
 public class RedisManagerTest extends BlogApiApplicationTests{

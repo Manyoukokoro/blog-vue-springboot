@@ -1,4 +1,4 @@
-package com.shimh.controller;
+package com.nekotori.controller;
 
 import java.util.Date;
 
@@ -12,7 +12,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.alibaba.fastjson.JSONObject;
-import com.shimh.BlogApiApplicationTests;
+import com.nekotori.BlogApiApplicationTests;
 import com.nekotori.entity.User;
 import com.nekotori.entity.UserStatus;
 
@@ -36,7 +36,7 @@ public class UserControllerTest extends BlogApiApplicationTests{
 	@Test
 	public void saveUserTest() throws Exception {
 		User u = new User();
-		u.setAccount("shimh");
+		u.setAccount("nekotori");
 		u.setNickname("史明辉");
 		u.setPassword("123456");
 		u.setAdmin(true);

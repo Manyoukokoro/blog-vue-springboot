@@ -3,7 +3,7 @@ package com.nekotori.vo;
 import com.nekotori.entity.Category;
 
 /**
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月29日
  */

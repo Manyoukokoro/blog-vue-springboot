@@ -11,7 +11,7 @@ import org.apache.shiro.util.ByteSource;
  * 生成随机salt
  * md5(md5(password))
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

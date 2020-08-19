@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年4月18日
  */

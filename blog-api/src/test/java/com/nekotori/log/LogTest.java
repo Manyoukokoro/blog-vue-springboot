@@ -1,4 +1,4 @@
-package com.shimh.log;
+package com.nekotori.log;
 
 import org.junit.Test;
 import org.slf4j.Logger;

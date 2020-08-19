@@ -15,7 +15,7 @@ import com.nekotori.common.entity.BaseEntity;
 /**
  * 评论
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月30日
  */

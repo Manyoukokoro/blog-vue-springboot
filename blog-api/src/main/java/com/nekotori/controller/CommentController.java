@@ -24,7 +24,7 @@ import com.nekotori.service.CommentService;
 /**
  * 评论api
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月25日
  */

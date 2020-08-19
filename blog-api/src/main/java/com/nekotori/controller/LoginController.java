@@ -26,7 +26,7 @@ import com.nekotori.service.UserService;
 /**
  * 登录
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */
@@ -76,8 +76,8 @@ public class LoginController {
         UsernamePasswordToken token = new UsernamePasswordToken(account, password);
 
         try {
-            subject.login(token);
 
+            subject.login(token);
             User currentUser = userService.getUserByAccount(account);
             subject.getSession().setAttribute(Base.CURRENT_USER, currentUser);
 

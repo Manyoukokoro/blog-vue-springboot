@@ -13,7 +13,7 @@ import com.nekotori.oauth.OAuthSessionManager;
 /**
  * Session超时，通知前端删除token
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月30日
  */

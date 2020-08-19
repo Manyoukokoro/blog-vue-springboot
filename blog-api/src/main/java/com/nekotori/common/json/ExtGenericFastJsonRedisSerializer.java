@@ -9,7 +9,7 @@ import com.alibaba.fastjson.support.spring.GenericFastJsonRedisSerializer;
 /**
  * Fastjson集成 spring-data-redis 扩展
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */

@@ -27,7 +27,7 @@ import com.nekotori.service.UserService;
 /**
  * 用户api
  *
- * @author shimh
+ * @author nekotori
  * <p>
  * 2018年1月23日
  */
