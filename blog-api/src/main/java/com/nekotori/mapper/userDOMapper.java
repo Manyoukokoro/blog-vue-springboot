@@ -1,17 +1,17 @@
 package com.nekotori.mapper;
 
-import com.nekotori.entity.userDO;
+import com.nekotori.entity.UserDO;
 
 public interface userDOMapper {
     int deleteByPrimaryKey(Long id);
 
-    int insert(userDO record);
+    int insert(UserDO record);
 
-    int insertSelective(userDO record);
+    int insertSelective(UserDO record);
 
-    userDO selectByPrimaryKey(Long id);
+    UserDO selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(userDO record);
+    int updateByPrimaryKeySelective(UserDO record);
 
-    int updateByPrimaryKey(userDO record);
+    int updateByPrimaryKey(UserDO record);
 }

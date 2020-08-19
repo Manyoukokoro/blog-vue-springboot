@@ -2,7 +2,7 @@ package com.nekotori.entity;
 
 import java.util.Date;
 
-public class userDO {
+public class UserDO {
     private Long id;
 
     private String account;
