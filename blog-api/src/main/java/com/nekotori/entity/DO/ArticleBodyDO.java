@@ -1,6 +1,8 @@
-package com.nekotori.entity;
+package com.nekotori.entity.DO;
 
-public class ArticleBodyDO {
+import com.nekotori.common.entity.BaseEntity;
+
+public class ArticleBodyDO extends BaseEntity<Long> {
     private Long id;
 
     private String content;

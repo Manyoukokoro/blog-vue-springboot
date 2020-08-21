@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.nekotori.mapper.ArticleDOMapper">
-  <resultMap id="BaseResultMap" type="com.nekotori.entity.ArticleDO">
+  <resultMap id="BaseResultMap" type="com.nekotori.entity.DO.ArticleDO">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="comment_counts" jdbcType="INTEGER" property="commentCounts" />
     <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
@@ -27,7 +27,7 @@
     delete from me_article
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.nekotori.entity.ArticleDO">
+  <insert id="insert" parameterType="com.nekotori.entity.DO.ArticleDO">
     insert into me_article (id, comment_counts, create_date, 
       summary, title, view_counts, 
       weight, author_id, body_id, 
@@ -37,7 +37,7 @@
       #{weight,jdbcType=INTEGER}, #{authorId,jdbcType=BIGINT}, #{bodyId,jdbcType=BIGINT}, 
       #{categoryId,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.nekotori.entity.ArticleDO">
+  <insert id="insertSelective" parameterType="com.nekotori.entity.DO.ArticleDO">
     insert into me_article
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -104,7 +104,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.ArticleDO">
+  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.DO.ArticleDO">
     update me_article
     <set>
       <if test="commentCounts != null">
@@ -137,7 +137,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.nekotori.entity.ArticleDO">
+  <update id="updateByPrimaryKey" parameterType="com.nekotori.entity.DO.ArticleDO">
     update me_article
     set comment_counts = #{commentCounts,jdbcType=INTEGER},
       create_date = #{createDate,jdbcType=TIMESTAMP},

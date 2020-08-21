@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.nekotori.mapper.CategoryDOMapper">
-  <resultMap id="BaseResultMap" type="com.nekotori.entity.CategoryDO">
+  <resultMap id="BaseResultMap" type="com.nekotori.entity.DO.CategoryDO">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="avatar" jdbcType="VARCHAR" property="avatar" />
     <result column="categoryname" jdbcType="VARCHAR" property="categoryname" />
@@ -20,13 +20,13 @@
     delete from me_category
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.nekotori.entity.CategoryDO">
+  <insert id="insert" parameterType="com.nekotori.entity.DO.CategoryDO">
     insert into me_category (id, avatar, categoryname, 
       description)
     values (#{id,jdbcType=INTEGER}, #{avatar,jdbcType=VARCHAR}, #{categoryname,jdbcType=VARCHAR}, 
       #{description,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.nekotori.entity.CategoryDO">
+  <insert id="insertSelective" parameterType="com.nekotori.entity.DO.CategoryDO">
     insert into me_category
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -57,7 +57,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.CategoryDO">
+  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.DO.CategoryDO">
     update me_category
     <set>
       <if test="avatar != null">
@@ -72,7 +72,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.nekotori.entity.CategoryDO">
+  <update id="updateByPrimaryKey" parameterType="com.nekotori.entity.DO.CategoryDO">
     update me_category
     set avatar = #{avatar,jdbcType=VARCHAR},
       categoryname = #{categoryname,jdbcType=VARCHAR},

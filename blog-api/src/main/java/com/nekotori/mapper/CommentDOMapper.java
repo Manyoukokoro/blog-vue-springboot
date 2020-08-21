@@ -1,7 +1,9 @@
 package com.nekotori.mapper;
 
-import com.nekotori.entity.CommentDO;
+import com.nekotori.entity.DO.CommentDO;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface CommentDOMapper {
     int deleteByPrimaryKey(Integer id);
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.nekotori.mapper.ArticleBodyDOMapper">
-  <resultMap id="BaseResultMap" type="com.nekotori.entity.ArticleBodyDO">
+  <resultMap id="BaseResultMap" type="com.nekotori.entity.DO.ArticleBodyDO">
     <id column="id" jdbcType="BIGINT" property="id" />
   </resultMap>
-  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.nekotori.entity.ArticleBodyDO">
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.nekotori.entity.DO.ArticleBodyDO">
     <result column="content" jdbcType="LONGVARCHAR" property="content" />
     <result column="content_html" jdbcType="LONGVARCHAR" property="contentHtml" />
   </resultMap>
@@ -26,13 +26,13 @@
     delete from me_article_body
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.nekotori.entity.ArticleBodyDO">
+  <insert id="insert" parameterType="com.nekotori.entity.DO.ArticleBodyDO">
     insert into me_article_body (id, content, content_html
       )
     values (#{id,jdbcType=BIGINT}, #{content,jdbcType=LONGVARCHAR}, #{contentHtml,jdbcType=LONGVARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.nekotori.entity.ArticleBodyDO">
+  <insert id="insertSelective" parameterType="com.nekotori.entity.DO.ArticleBodyDO">
     insert into me_article_body
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -57,7 +57,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.ArticleBodyDO">
+  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.DO.ArticleBodyDO">
     update me_article_body
     <set>
       <if test="content != null">
@@ -69,7 +69,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.nekotori.entity.ArticleBodyDO">
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.nekotori.entity.DO.ArticleBodyDO">
     update me_article_body
     set content = #{content,jdbcType=LONGVARCHAR},
       content_html = #{contentHtml,jdbcType=LONGVARCHAR}

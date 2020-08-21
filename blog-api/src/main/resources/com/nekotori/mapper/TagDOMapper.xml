@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.nekotori.mapper.TagDOMapper">
-  <resultMap id="BaseResultMap" type="com.nekotori.entity.TagDO">
+  <resultMap id="BaseResultMap" type="com.nekotori.entity.DO.TagDO">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="avatar" jdbcType="VARCHAR" property="avatar" />
     <result column="tagname" jdbcType="VARCHAR" property="tagname" />
@@ -19,13 +19,13 @@
     delete from me_tag
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.nekotori.entity.TagDO">
+  <insert id="insert" parameterType="com.nekotori.entity.DO.TagDO">
     insert into me_tag (id, avatar, tagname
       )
     values (#{id,jdbcType=INTEGER}, #{avatar,jdbcType=VARCHAR}, #{tagname,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.nekotori.entity.TagDO">
+  <insert id="insertSelective" parameterType="com.nekotori.entity.DO.TagDO">
     insert into me_tag
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.TagDO">
+  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.DO.TagDO">
     update me_tag
     <set>
       <if test="avatar != null">
@@ -62,7 +62,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.nekotori.entity.TagDO">
+  <update id="updateByPrimaryKey" parameterType="com.nekotori.entity.DO.TagDO">
     update me_tag
     set avatar = #{avatar,jdbcType=VARCHAR},
       tagname = #{tagname,jdbcType=VARCHAR}

@@ -1,7 +1,9 @@
 package com.nekotori.mapper;
 
-import com.nekotori.entity.LogDO;
+import com.nekotori.entity.DO.LogDO;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface LogDOMapper {
     int deleteByPrimaryKey(Integer id);
 

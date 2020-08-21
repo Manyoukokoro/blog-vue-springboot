@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.nekotori.mapper.CommentDOMapper">
-  <resultMap id="BaseResultMap" type="com.nekotori.entity.CommentDO">
+  <resultMap id="BaseResultMap" type="com.nekotori.entity.DO.CommentDO">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="content" jdbcType="VARCHAR" property="content" />
     <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
@@ -24,7 +24,7 @@
     delete from me_comment
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.nekotori.entity.CommentDO">
+  <insert id="insert" parameterType="com.nekotori.entity.DO.CommentDO">
     insert into me_comment (id, content, create_date, 
       level, article_id, author_id, 
       parent_id, to_uid)
@@ -32,7 +32,7 @@
       #{level,jdbcType=VARCHAR}, #{articleId,jdbcType=INTEGER}, #{authorId,jdbcType=BIGINT}, 
       #{parentId,jdbcType=INTEGER}, #{toUid,jdbcType=BIGINT})
   </insert>
-  <insert id="insertSelective" parameterType="com.nekotori.entity.CommentDO">
+  <insert id="insertSelective" parameterType="com.nekotori.entity.DO.CommentDO">
     insert into me_comment
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -87,7 +87,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.CommentDO">
+  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.DO.CommentDO">
     update me_comment
     <set>
       <if test="content != null">
@@ -114,7 +114,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.nekotori.entity.CommentDO">
+  <update id="updateByPrimaryKey" parameterType="com.nekotori.entity.DO.CommentDO">
     update me_comment
     set content = #{content,jdbcType=VARCHAR},
       create_date = #{createDate,jdbcType=TIMESTAMP},

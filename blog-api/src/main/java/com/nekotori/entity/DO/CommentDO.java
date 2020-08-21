@@ -1,4 +1,4 @@
-package com.nekotori.entity;
+package com.nekotori.entity.DO;
 
 import java.util.Date;
 

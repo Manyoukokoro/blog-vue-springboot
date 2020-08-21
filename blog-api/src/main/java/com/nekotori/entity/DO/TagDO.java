@@ -1,11 +1,13 @@
-package com.nekotori.entity;
+package com.nekotori.entity.DO;
 
-public class TagDO {
-    private Integer id;
+import com.nekotori.common.entity.BaseEntity;
 
-    private String avatar;
+public class TagDO extends BaseEntity<Integer> {
+    protected Integer id;
 
-    private String tagname;
+    protected String avatar;
+
+    protected String tagname;
 
     public Integer getId() {
         return id;

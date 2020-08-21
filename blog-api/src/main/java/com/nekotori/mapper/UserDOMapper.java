@@ -1,8 +1,10 @@
 package com.nekotori.mapper;
 
-import com.nekotori.entity.UserDO;
+import com.nekotori.entity.DO.UserDO;
+import org.apache.ibatis.annotations.Mapper;
 
-public interface userDOMapper {
+@Mapper
+public interface UserDOMapper {
     int deleteByPrimaryKey(Long id);
 
     int insert(UserDO record);

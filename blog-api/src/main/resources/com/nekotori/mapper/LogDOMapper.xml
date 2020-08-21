@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.nekotori.mapper.LogDOMapper">
-  <resultMap id="BaseResultMap" type="com.nekotori.entity.LogDO">
+  <resultMap id="BaseResultMap" type="com.nekotori.entity.DO.LogDO">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
     <result column="ip" jdbcType="VARCHAR" property="ip" />
@@ -26,7 +26,7 @@
     delete from sys_log
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.nekotori.entity.LogDO">
+  <insert id="insert" parameterType="com.nekotori.entity.DO.LogDO">
     insert into sys_log (id, create_date, ip, 
       method, module, nickname, 
       operation, params, time, 
@@ -36,7 +36,7 @@
       #{operation,jdbcType=VARCHAR}, #{params,jdbcType=VARCHAR}, #{time,jdbcType=BIGINT}, 
       #{userid,jdbcType=BIGINT})
   </insert>
-  <insert id="insertSelective" parameterType="com.nekotori.entity.LogDO">
+  <insert id="insertSelective" parameterType="com.nekotori.entity.DO.LogDO">
     insert into sys_log
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -103,7 +103,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.LogDO">
+  <update id="updateByPrimaryKeySelective" parameterType="com.nekotori.entity.DO.LogDO">
     update sys_log
     <set>
       <if test="createDate != null">
@@ -136,7 +136,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.nekotori.entity.LogDO">
+  <update id="updateByPrimaryKey" parameterType="com.nekotori.entity.DO.LogDO">
     update sys_log
     set create_date = #{createDate,jdbcType=TIMESTAMP},
       ip = #{ip,jdbcType=VARCHAR},

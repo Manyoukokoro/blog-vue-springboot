@@ -1,29 +1,29 @@
-package com.nekotori.entity;
+package com.nekotori.entity.DO;
 
 import com.nekotori.common.entity.BaseEntity;
 
 import java.util.Date;
 
 public class ArticleDO extends BaseEntity<Integer> {
-    private Integer id;
+    protected Integer id;
 
-    private Integer commentCounts;
+    protected Integer commentCounts;
 
-    private Date createDate;
+    protected Date createDate;
 
-    private String summary;
+    protected String summary;
 
-    private String title;
+    protected String title;
 
-    private Integer viewCounts;
+    protected Integer viewCounts;
 
-    private Integer weight;
+    protected Integer weight;
 
-    private Long authorId;
+    protected Long authorId;
 
-    private Long bodyId;
+    protected Long bodyId;
 
-    private Integer categoryId;
+    protected Integer categoryId;
 
     public Integer getId() {
         return id;

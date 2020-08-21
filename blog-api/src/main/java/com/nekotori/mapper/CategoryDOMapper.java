@@ -1,7 +1,9 @@
 package com.nekotori.mapper;
 
-import com.nekotori.entity.CategoryDO;
+import com.nekotori.entity.DO.CategoryDO;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface CategoryDOMapper {
     int deleteByPrimaryKey(Integer id);
 

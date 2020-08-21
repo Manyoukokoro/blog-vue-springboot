@@ -1,13 +1,15 @@
-package com.nekotori.entity;
+package com.nekotori.entity.DO;
 
-public class CategoryDO {
-    private Integer id;
+import com.nekotori.common.entity.BaseEntity;
 
-    private String avatar;
+public class CategoryDO extends BaseEntity<Integer> {
+    protected Integer id;
 
-    private String categoryname;
+    protected String avatar;
 
-    private String description;
+    protected String categoryname;
+
+    protected String description;
 
     public Integer getId() {
         return id;

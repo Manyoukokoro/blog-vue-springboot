@@ -1,7 +1,9 @@
 package com.nekotori.mapper;
 
-import com.nekotori.entity.TagDO;
+import com.nekotori.entity.DO.TagDO;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface TagDOMapper {
     int deleteByPrimaryKey(Integer id);
 

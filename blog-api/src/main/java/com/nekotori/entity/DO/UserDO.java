@@ -1,33 +1,35 @@
-package com.nekotori.entity;
+package com.nekotori.entity.DO;
+
+import com.nekotori.common.entity.BaseEntity;
 
 import java.util.Date;
 
-public class UserDO {
-    private Long id;
+public class UserDO extends BaseEntity<Long> {
+    protected Long id;
 
-    private String account;
+    protected String account;
 
-    private Boolean admin;
+    protected Boolean admin;
 
-    private String avatar;
+    protected String avatar;
 
-    private Date createDate;
+    protected Date createDate;
 
-    private Boolean deleted;
+    protected Boolean deleted;
 
-    private String email;
+    protected String email;
 
-    private Date lastLogin;
+    protected Date lastLogin;
 
-    private String mobilePhoneNumber;
+    protected String mobilePhoneNumber;
 
-    private String nickname;
+    protected String nickname;
 
-    private String password;
+    protected String password;
 
-    private String salt;
+    protected String salt;
 
-    private String status;
+    protected String status;
 
     public Long getId() {
         return id;
@@ -125,11 +127,9 @@ public class UserDO {
         this.salt = salt == null ? null : salt.trim();
     }
 
-    public String getStatus() {
-        return status;
-    }
+    public String getStatusSuper() { return status; }
 
-    public void setStatus(String status) {
+    public void setStatusSuper(String status) {
         this.status = status == null ? null : status.trim();
     }
 }
